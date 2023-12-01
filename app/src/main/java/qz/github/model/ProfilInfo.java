@@ -64,7 +64,10 @@ public class ProfilInfo {
 
     @SerializedName("created_at")
     private String created_at;
-
+    
+    public ProfilInfo(){
+        super();
+    }
     public String getUsername() {
         return this.username;
     }

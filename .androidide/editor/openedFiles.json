@@ -1,0 +1,35 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/model/URLParser.java",
+      "selection": {
+        "end": {
+          "column": 22,
+          "index": 184,
+          "line": 7
+        },
+        "start": {
+          "column": 13,
+          "index": 175,
+          "line": 7
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 24,
+          "index": 1504,
+          "line": 40
+        },
+        "start": {
+          "column": 24,
+          "index": 1504,
+          "line": 40
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java"
+}

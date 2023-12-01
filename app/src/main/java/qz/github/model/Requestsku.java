@@ -30,7 +30,8 @@ public class Requestsku implements Callback<ProfilInfo> {
                         .baseUrl(this.url)
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
-        this.retrofit.create(Github.class).getInfo(this.username)
+        this.retrofit.create(Github.class)
+        .getInfo(this.username)
         .enqueue(this);
     }
 
