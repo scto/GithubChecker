@@ -4,32 +4,62 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 18,
+          "index": 3321,
+          "line": 91
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 18,
+          "index": 3321,
+          "line": 91
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/myUtils/UserParse.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/res/layout/costum_list.xml",
       "selection": {
         "end": {
-          "column": 24,
-          "index": 360,
-          "line": 12
+          "column": 0,
+          "index": 2397,
+          "line": 67
         },
         "start": {
-          "column": 24,
-          "index": 360,
-          "line": 12
+          "column": 0,
+          "index": 2397,
+          "line": 67
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/model/ProfilInfo.java",
+      "selection": {
+        "end": {
+          "column": 23,
+          "index": 1825,
+          "line": 56
+        },
+        "start": {
+          "column": 23,
+          "index": 1825,
+          "line": 56
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/viewmodel/mAdapter.java",
+      "selection": {
+        "end": {
+          "column": 62,
+          "index": 1600,
+          "line": 45
+        },
+        "start": {
+          "column": 62,
+          "index": 1600,
+          "line": 45
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/myUtils/UserParse.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/res/layout/costum_list.xml"
 }

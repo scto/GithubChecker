@@ -25,20 +25,25 @@ public class mAdapter extends RecyclerView.Adapter<mAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView img;
-        public TextView user;
+        public TextView user, followers, Repos;
 
         public ViewHolder(View v) {
             super(v);
             this.user = v.findViewById(R.id.user);
             this.img = v.findViewById(R.id.avatar);
+            this.followers = v.findViewById(R.id.followersCount);
+            this.Repos = v.findViewById(R.id.publicreposCount);
+            
         }
     }
 
     @Override
     public void onBindViewHolder(mAdapter.ViewHolder viewholder, int arg1) {
         ProfilInfo ehe = (ProfilInfo) netebang.get(viewholder.getAdapterPosition());
-        //Glide.with(ctx).load(ehe.getAvatar()).into(viewholder.img);
+        Glide.with(ctx).load(ehe.getAvatar()).into(viewholder.img);
         viewholder.user.setText(ehe.getUsername());
+        viewholder.Repos.setText(ehe.getPublicreposCount());
+        viewholder.followers.setText(ehe.getFollowersCount());
     }
 
     @Override

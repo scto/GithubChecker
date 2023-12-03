@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.*;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.Group;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
@@ -50,10 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         lprofilinfo.clear();
                         Context cyx = arg0.getRootView().getContext();
                         for (String url : binding.inputName.getText().toString().split("\n")) {
-                            ProfilInfo test = new ProfilInfo();
-                            test.setUsername(UserParse.parseUrl(url));
-                            lprofilinfo.add(test);
-                            adapter.notifyDataSetChanged();
+                            executors(UserParse.parseUrl(url));
                         }
                     }
                 });
@@ -65,5 +63,32 @@ public class MainActivity extends AppCompatActivity {
         this.binding = null;
     }
 
-    void executors(String username) {}
+    void executors(String username) {
+        Handler hand = new Handler(Looper.getMainLooper());
+        Thread t =
+                new Thread(
+                        new Runnable() {
+                            Requestsku req = new Requestsku(username);
+
+                            @Override
+                            public void run() {
+                                synchronized (this) {
+                                    req.init();
+                                    req.getResult();
+                                }
+
+                                // TODO: Implement this method
+                                hand.post(
+                                        new Runnable() {
+
+                                            @Override
+                                            public void run() {
+                                                lprofilinfo.add(req.getResult());
+                                                adapter.notifyDataSetChanged();
+                                            }
+                                        });
+                            }
+                        });
+        t.start();
+    }
 }

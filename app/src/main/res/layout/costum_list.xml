@@ -4,6 +4,7 @@
      xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_height="wrap_content"
      android:layout_width="match_parent"
+     android:layout_margin="5dp"
      android:orientation="vertical">
 
     <LinearLayout
@@ -16,7 +17,7 @@
              android:layout_width="match_parent"
              android:gravity="center"
              android:orientation="vertical"
-             android:layout_weight="3"
+             android:layout_weight="10"
              android:tag="Photo">
 
             <ImageView
@@ -31,36 +32,56 @@
              android:layout_height="match_parent"
              android:layout_width="match_parent"
              android:orientation="horizontal"
-             android:layout_weight="1"
+             android:layout_weight="3"
              android:tag="TextItem">
 
             <LinearLayout
                  android:layout_height="match_parent"
-                 android:layout_width="match_parent"
+                 android:layout_width="wrap_content"
                  android:orientation="vertical"
                  android:layout_weight="3"
                  android:tag="Key">
 
                 <TextView
-                     android:layout_height="match_parent"
+                     android:layout_height="wrap_content"
                      android:layout_width="match_parent"
-                     android:orientation="vertical"
                      android:text="Username: " />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:text="publicreposCount: " />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:text="followersCount: " />
 
             </LinearLayout>
 
             <LinearLayout
                  android:layout_height="match_parent"
-                 android:layout_width="match_parent"
+                 android:layout_width="wrap_content"
                  android:orientation="vertical"
                  android:layout_weight="1"
                  android:tag="Value">
 
                 <TextView
-                     android:layout_height="match_parent"
+                     android:layout_height="wrap_content"
                      android:layout_width="match_parent"
-                     android:orientation="vertical"
                      android:id="@+id/user"
+                     android:text="Value" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:id="@+id/publicreposCount"
+                     android:text="Value" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:id="@+id/followersCount"
                      android:text="Value" />
 
             </LinearLayout>
