@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new mAdapter(lprofilinfo, this);
         binding.listView.setAdapter(adapter);
         binding.listView.setLayoutManager(new LinearLayoutManager(this));
-        binding.inputName.setText("https://github.com/QiubyZ\niqbal");
+        binding.inputName.setText("https://github.com/QiubyZ");
 
         binding.start.setOnClickListener(
                 new View.OnClickListener() {

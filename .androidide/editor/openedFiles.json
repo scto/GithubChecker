@@ -4,32 +4,17 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 63,
+          "index": 1253,
+          "line": 36
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Github/.github/workflows/android.yml",
-      "selection": {
-        "end": {
-          "column": 8,
-          "index": 388,
-          "line": 22
-        },
-        "start": {
-          "column": 8,
-          "index": 388,
-          "line": 22
+          "column": 63,
+          "index": 1253,
+          "line": 36
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/.github/workflows/android.yml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java"
 }
