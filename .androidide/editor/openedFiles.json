@@ -1,35 +1,35 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/model/URLParser.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
       "selection": {
         "end": {
-          "column": 22,
-          "index": 184,
-          "line": 7
+          "column": 0,
+          "index": 0,
+          "line": 0
         },
         "start": {
-          "column": 13,
-          "index": 175,
-          "line": 7
+          "column": 0,
+          "index": 0,
+          "line": 0
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/myUtils/UserParse.java",
       "selection": {
         "end": {
           "column": 24,
-          "index": 1504,
-          "line": 40
+          "index": 360,
+          "line": 12
         },
         "start": {
           "column": 24,
-          "index": 1504,
-          "line": 40
+          "index": 360,
+          "line": 12
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/myUtils/UserParse.java"
 }

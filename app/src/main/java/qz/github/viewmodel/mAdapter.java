@@ -36,8 +36,8 @@ public class mAdapter extends RecyclerView.Adapter<mAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(mAdapter.ViewHolder viewholder, int arg1) {
-        ProfilInfo ehe = (ProfilInfo) netebang.get(arg1);
-        Glide.with(ctx).load(ehe.getAvatar()).into(viewholder.img);
+        ProfilInfo ehe = (ProfilInfo) netebang.get(viewholder.getAdapterPosition());
+        //Glide.with(ctx).load(ehe.getAvatar()).into(viewholder.img);
         viewholder.user.setText(ehe.getUsername());
     }
 

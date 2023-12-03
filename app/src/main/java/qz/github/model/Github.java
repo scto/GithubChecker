@@ -7,5 +7,4 @@ public interface Github {
     @GET("users/{username}")
     
     public Call<ProfilInfo> getInfo(@Path("username") String username);
-    
 }

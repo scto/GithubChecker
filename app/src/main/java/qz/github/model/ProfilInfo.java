@@ -66,7 +66,6 @@ public class ProfilInfo {
     private String created_at;
     
     public ProfilInfo(){
-        super();
     }
     public String getUsername() {
         return this.username;

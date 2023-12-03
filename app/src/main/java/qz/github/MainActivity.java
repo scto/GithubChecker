@@ -1,26 +1,34 @@
 package qz.github;
 
+import android.content.Context;
+import android.graphics.Insets;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.view.View.*;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.OrientationHelper;
-import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import qz.github.databinding.ActivityMainBinding;
 import qz.github.model.ProfilInfo;
-import qz.github.model.URLParser;
+
+import android.widget.Toast;
 
 import qz.github.model.Requestsku;
+import qz.github.myUtils.UserParse;
 import qz.github.viewmodel.mAdapter;
-import android.view.View.OnClickListener;
 
-public class MainActivity extends AppCompatActivity implements Requestsku.ResultData {
-    private ActivityMainBinding binding;
+public class MainActivity extends AppCompatActivity {
+    public ActivityMainBinding binding;
     public ArrayList<ProfilInfo> lprofilinfo;
-    mAdapter adapter;
+    public mAdapter adapter;
+    public String TAGS = MainActivity.this.toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +41,20 @@ public class MainActivity extends AppCompatActivity implements Requestsku.Result
         adapter = new mAdapter(lprofilinfo, this);
         binding.listView.setAdapter(adapter);
         binding.listView.setLayoutManager(new LinearLayoutManager(this));
-        binding.inputName.setText("https://github.com/QiubyZ");
+        binding.inputName.setText("https://github.com/QiubyZ\niqbal");
+
         binding.start.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         lprofilinfo.clear();
-                        String user = binding.inputName.getText().toString();
-                        URLParser resultList = new URLParser();
-                    for(String usr:resultList.parseURLs(user)){
-                        ReqApi(usr);
-                        Log.d(arg0.getContext().toString(), usr);
-                    }
-                    
+                        Context cyx = arg0.getRootView().getContext();
+                        for (String url : binding.inputName.getText().toString().split("\n")) {
+                            ProfilInfo test = new ProfilInfo();
+                            test.setUsername(UserParse.parseUrl(url));
+                            lprofilinfo.add(test);
+                            adapter.notifyDataSetChanged();
+                        }
                     }
                 });
     }
@@ -56,14 +65,5 @@ public class MainActivity extends AppCompatActivity implements Requestsku.Result
         this.binding = null;
     }
 
-    public void ReqApi(String username) {
-        Requestsku request = new Requestsku(this, "https://api.github.com/", username);
-        request.setOnResultListener(this);
-    }
-
-    @Override
-    public void ResponseData(ProfilInfo profilinfo) {
-        lprofilinfo.add(profilinfo);
-        adapter.notifyDataSetChanged();
-    }
+    void executors(String username) {}
 }
