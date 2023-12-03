@@ -1,25 +1,17 @@
 package qz.github;
 
 import android.content.Context;
-import android.graphics.Insets;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.view.View.*;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.Group;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import qz.github.databinding.ActivityMainBinding;
 import qz.github.model.ProfilInfo;
 
-import android.widget.Toast;
 
 import qz.github.model.Requestsku;
 import qz.github.myUtils.UserParse;

@@ -8,11 +8,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import qz.github.*;
 import android.view.ViewGroup;
-import androidx.core.view.ViewGroupCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import qz.github.model.ProfilInfo;
-import qz.github.viewmodel.mAdapter;
 
 public class mAdapter extends RecyclerView.Adapter<mAdapter.ViewHolder> {
     List<ProfilInfo> netebang;
