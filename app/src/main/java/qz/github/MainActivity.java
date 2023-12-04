@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                             public void run() {
                                 synchronized (this) {
                                     req.init();
-                                    req.getResult();
                                 }
 
                                 // TODO: Implement this method
