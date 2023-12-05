@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import qz.github.databinding.ActivityMainBinding;
 import qz.github.model.ProfilInfo;
 
-
 import qz.github.model.Requestsku;
 import qz.github.myUtils.UserParse;
 import qz.github.viewmodel.mAdapter;
@@ -31,20 +30,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         lprofilinfo = new ArrayList<ProfilInfo>();
-        adapter = new mAdapter(lprofilinfo, this);
+        adapter = new mAdapter(lprofilinfo);
         binding.listView.setAdapter(adapter);
         binding.listView.setLayoutManager(new LinearLayoutManager(this));
         binding.inputName.setText("https://github.com/QiubyZ");
 
         binding.start.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        lprofilinfo.clear();
-                        Context cyx = arg0.getRootView().getContext();
-                        for (String url : binding.inputName.getText().toString().split("\n")) {
-                            executors(UserParse.parseUrl(url));
-                        }
+                (v) -> {
+                    lprofilinfo.clear();
+                    Context cyx = v.getRootView().getContext();
+                    for (String url : binding.inputName.getText().toString().split("\n")) {
+                        executors(UserParse.parseUrl(url));
                     }
                 });
     }
@@ -61,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 new Thread(
                         new Runnable() {
                             Requestsku req = new Requestsku(username);
-
                             @Override
                             public void run() {
                                 synchronized (this) {
