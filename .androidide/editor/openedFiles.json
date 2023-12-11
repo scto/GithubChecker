@@ -1,35 +1,20 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/viewmodel/mAdapter.java",
-      "selection": {
-        "end": {
-          "column": 63,
-          "index": 1090,
-          "line": 33
-        },
-        "start": {
-          "column": 63,
-          "index": 1090,
-          "line": 33
-        }
-      }
-    },
-    {
       "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
       "selection": {
         "end": {
-          "column": 70,
-          "index": 1987,
-          "line": 58
+          "column": 13,
+          "index": 2060,
+          "line": 64
         },
         "start": {
-          "column": 70,
-          "index": 1987,
-          "line": 58
+          "column": 13,
+          "index": 2060,
+          "line": 64
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/viewmodel/mAdapter.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java"
 }
