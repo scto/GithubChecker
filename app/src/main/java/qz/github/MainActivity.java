@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         binding.start.setOnClickListener(
                 (v) -> {
                     lprofilinfo.clear();
-                    Context cyx = v.getRootView().getContext();
                     for (String url : binding.inputName.getText().toString().split("\n")) {
                         executors(UserParse.parseUrl(url));
                     }

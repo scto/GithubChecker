@@ -4,14 +4,44 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/MainActivity.java",
       "selection": {
         "end": {
-          "column": 13,
-          "index": 2060,
-          "line": 64
+          "column": 40,
+          "index": 1355,
+          "line": 39
         },
         "start": {
-          "column": 13,
-          "index": 2060,
-          "line": 64
+          "column": 40,
+          "index": 1355,
+          "line": 39
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/myUtils/UserParse.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Github/app/src/main/java/qz/github/model/Requestsku.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
         }
       }
     }
