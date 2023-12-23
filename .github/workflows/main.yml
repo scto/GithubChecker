@@ -58,8 +58,3 @@ jobs:
         file: ${{env.FILE_OUTPUT}}
         tag_name: ${{env.TAG}}
         tags: true
-<<<<<<< HEAD
-
-=======
->>>>>>> e4965f3 (Update AGP dan SDK Version)
-      
