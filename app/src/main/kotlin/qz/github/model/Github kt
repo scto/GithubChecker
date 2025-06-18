@@ -1,0 +1,10 @@
+package qz.github.model
+
+import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Path
+
+interface Github {
+    @GET("users/{username}")
+    fun getInfo(@Path("username") username: String): Call<ProfilInfo>
+}

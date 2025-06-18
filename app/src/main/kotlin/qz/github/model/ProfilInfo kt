@@ -1,0 +1,62 @@
+package qz.github.model
+
+import com.google.gson.annotations.SerializedName
+
+/*
+This is Example Json Result Format from Requests
+{
+  "login": "QiubyZ",
+  "id": 149507435,
+  "node_id": "U_kgDOCOlNaw",
+  "avatar_url": "https://avatars.githubusercontent.com/u/149507435?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/QiubyZ",
+  "html_url": "https://github.com/users/QiubyZ",
+  "followers_url": "https://api.github.com/users/QiubyZ/followers",
+  "following_url": "https://api.github.com/users/QiubyZ/following{/other_user}",
+  "gists_url": "https://api.github.com/users/QiubyZ/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/QiubyZ/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/QiubyZ/subscriptions",
+  "organizations_url": "https://api.github.com/users/QiubyZ/orgs",
+  "repos_url": "https://api.github.com/users/QiubyZ/repos",
+  "events_url": "https://api.github.com/users/QiubyZ/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/QiubyZ/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 10,
+  "public_gists": 0,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2023-10-31T14:19:14Z",
+  "updated_at": "2023-11-24T11:15:03Z"
+}
+*/
+
+/**
+ * Data class to represent GitHub profile information.
+ * Uses @SerializedName to map JSON keys to Kotlin properties.
+ */
+data class ProfilInfo(
+    @SerializedName("login")
+    val username: String?,
+
+    @SerializedName("avatar_url")
+    val avatar: String?,
+
+    @SerializedName("public_repos")
+    val publicReposCount: Int?, // Changed to Int as per JSON example
+
+    @SerializedName("followers")
+    val followersCount: Int?, // Changed to Int as per JSON example
+
+    @SerializedName("created_at")
+    val createdAt: String?
+)

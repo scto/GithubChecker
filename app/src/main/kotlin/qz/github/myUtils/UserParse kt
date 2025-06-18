@@ -1,0 +1,16 @@
+package qz.github.myUtils
+
+import java.net.URI
+import java.net.URISyntaxException
+
+object UserParse {
+    fun parseUrl(test: String): String {
+        return try {
+            val uri = URI(test)
+            uri.path.replace("/", "")
+        } catch (e: URISyntaxException) {
+            e.printStackTrace()
+            test
+        }
+    }
+}
